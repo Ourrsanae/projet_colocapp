@@ -4,13 +4,13 @@ import 'package:projetpfe/constants/sizes.dart';
 
 class HCircularImage extends StatelessWidget {
   const HCircularImage({
-    Key? key,
+    super.key,
     required this.image,
     this.onTap,
     required this.width,
     required this.height,
     this.padding = HSize.sm,
-  }) : super(key: key);
+  });
 
   final String image;
   final double width, height, padding;

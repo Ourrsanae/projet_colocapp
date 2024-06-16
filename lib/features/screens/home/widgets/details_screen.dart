@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:projetpfe/constants/sizes.dart';
 import 'package:projetpfe/features/screens/home/widgets/curved_edges_widget.dart';
-import 'package:projetpfe/features/screens/profile/widgets/circular_image.dart';
 import 'package:projetpfe/features/screens/widgets/appbar/appbar.dart';
 import 'package:projetpfe/utils/helper_function.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -14,7 +13,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 class AnnonceDetails extends StatefulWidget {
   final String annonceId;
 
-  const AnnonceDetails({required this.annonceId, Key? key}) : super(key: key);
+  const AnnonceDetails({required this.annonceId, super.key});
 
   @override
   _AnnonceDetailsState createState() => _AnnonceDetailsState();
@@ -296,13 +295,13 @@ class HAnnonceImageSlider extends StatelessWidget {
 
 class HCircularImage extends StatelessWidget {
   const HCircularImage({
-    Key? key,
+    super.key,
     required this.image,
     this.onTap,
     required this.width,
     required this.height,
     this.padding = HSize.sm,
-  }) : super(key: key);
+  });
 
   final String image;
   final double width, height, padding;

@@ -3,11 +3,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:projetpfe/features/screens/home/request/widgets/commande%20_controller.dart';
 import 'package:projetpfe/features/screens/widgets/appbar/appbar.dart';
-import 'package:projetpfe/themes/theme.dart';
-import 'package:projetpfe/utils/helper_function.dart';
 
 class HWishListView extends StatefulWidget {
-  const HWishListView({Key? key}) : super(key: key);
+  const HWishListView({super.key});
 
   @override
   _HWishListViewState createState() => _HWishListViewState();
@@ -29,8 +27,8 @@ class _HWishListViewState extends State<HWishListView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: HAppBar(
-        title: const Text('My Wishlist'),
+      appBar: const HAppBar(
+        title: Text('My Wishlist'),
         showBackArrow: true,
       ),
       body: StreamBuilder<QuerySnapshot>(

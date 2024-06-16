@@ -93,7 +93,7 @@ class _EditProfileState extends State<EditProfile> {
           'imageUrl': imageUrl, // Save the image URL to Firestore
         });
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Profile updated successfully')),
+          const SnackBar(content: Text('Profile updated successfully')),
         );
         Get.offAll(() => const SettingsScreen());
       }
@@ -103,10 +103,10 @@ class _EditProfileState extends State<EditProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: HAppBar(showBackArrow: true, title: Text('Edit Profile')),
+      appBar: const HAppBar(showBackArrow: true, title: Text('Edit Profile')),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(HSize.defaultSpace),
+          padding: const EdgeInsets.all(HSize.defaultSpace),
           child: Form(
             key: _formKey,
             child: Column(
@@ -122,10 +122,10 @@ class _EditProfileState extends State<EditProfile> {
                         padding: 0,
                       ),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     TextFormField(
                       controller: usernameController,
-                      decoration: InputDecoration(labelText: 'Username'),
+                      decoration: const InputDecoration(labelText: 'Username'),
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please enter your username';
@@ -133,10 +133,10 @@ class _EditProfileState extends State<EditProfile> {
                         return null;
                       },
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     TextFormField(
                       controller: emailController,
-                      decoration: InputDecoration(labelText: 'Email'),
+                      decoration: const InputDecoration(labelText: 'Email'),
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please enter your email';
@@ -147,10 +147,10 @@ class _EditProfileState extends State<EditProfile> {
                         return null;
                       },
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     TextFormField(
                       controller: phoneController,
-                      decoration: InputDecoration(labelText: 'Phone Number'),
+                      decoration: const InputDecoration(labelText: 'Phone Number'),
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please enter your phone number';
@@ -161,10 +161,10 @@ class _EditProfileState extends State<EditProfile> {
                         return null;
                       },
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     TextFormField(
                       controller: firstNameController,
-                      decoration: InputDecoration(labelText: 'First Name'),
+                      decoration: const InputDecoration(labelText: 'First Name'),
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please enter your first name';
@@ -172,10 +172,10 @@ class _EditProfileState extends State<EditProfile> {
                         return null;
                       },
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     TextFormField(
                       controller: lastNameController,
-                      decoration: InputDecoration(labelText: 'Last Name'),
+                      decoration: const InputDecoration(labelText: 'Last Name'),
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please enter your last name';
@@ -183,10 +183,10 @@ class _EditProfileState extends State<EditProfile> {
                         return null;
                       },
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     ElevatedButton(
                       onPressed: _saveProfile,
-                      child: Text('Save Profile'),
+                      child: const Text('Save Profile'),
                     ),
                   ],
                 ),

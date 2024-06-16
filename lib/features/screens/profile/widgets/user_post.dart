@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:projetpfe/features/screens/profile/edit_post.dart';
 
 class UserPostsList extends StatelessWidget {
-  const UserPostsList({Key? key}) : super(key: key);
+  const UserPostsList({super.key});
 
   @override
   Widget build(BuildContext context) {

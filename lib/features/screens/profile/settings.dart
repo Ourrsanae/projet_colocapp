@@ -15,7 +15,6 @@ import 'package:projetpfe/features/screens/home/widgets/section.dart';
 import 'package:projetpfe/features/screens/login/login.dart';
 import 'package:projetpfe/features/screens/profile/widgets/user_post.dart';
 import 'package:projetpfe/features/screens/widgets/appbar/appbar.dart';
-import 'package:projetpfe/constants/images.dart';
 class SettingsScreen extends StatelessWidget {
 
   const SettingsScreen({super.key});
@@ -111,7 +110,7 @@ class SettingsScreen extends StatelessWidget {
                           icon: Iconsax.airdrop,
                           title: 'Edit Information',
                           subtitle: 'Preferences Information',
-                          onTap: () => Get.to(() => HEditInformation(annonceId: 'someAnnonceId')), // Adjust this line if necessary
+                          onTap: () => Get.to(() => const HEditInformation(annonceId: 'someAnnonceId')), // Adjust this line if necessary
                         ),
                         HSettingsMenuTile(
                           icon: Iconsax.like,

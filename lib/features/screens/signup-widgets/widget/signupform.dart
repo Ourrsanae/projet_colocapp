@@ -102,7 +102,7 @@ class SignUpForm extends StatelessWidget {
             },
             //   focusNode: _focusNodes[0],
 
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
                 hintText: "Your Phone",
                 suffixIcon: Icon(
                   Icons.phone,

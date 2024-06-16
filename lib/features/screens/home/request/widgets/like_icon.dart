@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:projetpfe/constants/sizes.dart';
 
 class LikeIcon extends StatefulWidget {
@@ -12,7 +11,7 @@ class LikeIcon extends StatefulWidget {
   final String annonceId;
 
   const LikeIcon({
-    Key? key,
+    super.key,
     this.width,
     this.height,
     this.size = HSize.lg,
@@ -20,7 +19,7 @@ class LikeIcon extends StatefulWidget {
     this.color,
     this.backgroundColor,
     required this.annonceId,
-  }) : super(key: key);
+  });
 
   @override
   _LikeIconState createState() => _LikeIconState();

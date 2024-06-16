@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:projetpfe/constants/images.dart';
-import 'package:projetpfe/features/screens/home/widgets/curved_edges_widget.dart';
 import 'package:projetpfe/utils/helper_function.dart';
 
 class AnnonceDetails extends StatelessWidget {

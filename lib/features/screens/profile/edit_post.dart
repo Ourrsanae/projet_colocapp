@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:location/location.dart';
@@ -14,7 +13,7 @@ import 'package:get/get.dart';
 class HEditPost extends StatefulWidget {
   final String annonceId;
 
-  const HEditPost({Key? key, required this.annonceId}) : super(key: key);
+  const HEditPost({super.key, required this.annonceId});
 
   @override
   _HEditPostState createState() => _HEditPostState();
@@ -316,11 +315,11 @@ class _HEditPostState extends State<HEditPost> {
                       onPressed: () {
                         deletePost();
                       },
-                      child: const Text("Delete Post"),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.red, // background
                         foregroundColor: Colors.white, // foreground
                       ),
+                      child: const Text("Delete Post"),
                     ),
                   ),
                 ),

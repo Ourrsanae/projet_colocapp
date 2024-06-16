@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:projetpfe/features/screens/home/request/widgets/like_icon.dart';
 import 'package:projetpfe/features/screens/home/widgets/details_screen.dart';
-import 'package:projetpfe/themes/theme.dart';
 
 class HAnnonceCard extends StatelessWidget {
   final String annonceId;
@@ -14,8 +13,7 @@ class HAnnonceCard extends StatelessWidget {
   final String bedrooms;
   final List<String>? preferences; // Add preferences field
 
-  const HAnnonceCard({
-    Key? key,
+  const HAnnonceCard({super.key,
     required this.annonceId,
     required this.title,
     required this.price,
@@ -67,14 +65,14 @@ class HAnnonceCard extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,
                   ),
                   const SizedBox(height: 4),
                   Text(
                     location,
-                    style: TextStyle(fontSize: 14, color: Colors.grey),
+                    style: const TextStyle(fontSize: 14, color: Colors.grey),
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1,
                   ),
@@ -84,7 +82,7 @@ class HAnnonceCard extends StatelessWidget {
                     children: [
                       Text(
                         '$price MAD',
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                       ),
                       if (preferences != null) ...[
                         Row(

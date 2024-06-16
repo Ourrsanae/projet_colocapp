@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:projetpfe/constants/images.dart';
 import 'package:projetpfe/constants/sizes.dart';
@@ -7,7 +6,6 @@ import 'package:projetpfe/features/screens/home/request/widgets/request_card.dar
 import 'package:projetpfe/features/screens/home/widgets/home_app_bar.dart';
 import 'package:projetpfe/features/screens/home/widgets/primary_header_container.dart';
 import 'package:projetpfe/features/screens/home/widgets/searchbar.dart';
-import 'package:projetpfe/features/screens/home/widgets/section.dart';
 import 'package:projetpfe/features/screens/home/widgets/welcome_slider.dart';
 
 class HomePage extends StatelessWidget {
@@ -29,7 +27,7 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            HPrimaryHeaderContainer(
+            const HPrimaryHeaderContainer(
               child: Column(
                 children: [
                   HHomeAppBar(),
@@ -39,7 +37,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(HSize.defaultSpace),
               child: HWelcomeSlider(
                 banners: [HImages.carousel1, HImages.carousel2, HImages.carousel3],
@@ -49,11 +47,11 @@ class HomePage extends StatelessWidget {
               future: getAllAnnounces(),
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
-                  return CircularProgressIndicator();
+                  return const CircularProgressIndicator();
                 } else if (snapshot.hasError) {
                   return Text('Error: ${snapshot.error}');
                 } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
-                  return Text('No annonces found');
+                  return const Text('No annonces found');
                 } else {
                   final annonces = snapshot.data!;
                   return CustomGridView(
@@ -100,7 +98,7 @@ class CustomGridView extends StatelessWidget {
       itemCount: itemCount,
       shrinkWrap: true,
       padding: EdgeInsets.zero,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
         maxCrossAxisExtent: 200,
         mainAxisSpacing: HSize.gridViewSpacing,

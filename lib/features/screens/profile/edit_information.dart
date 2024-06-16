@@ -260,7 +260,7 @@ class _HEditInformationState extends State<HEditInformation> {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.all(0),
+          padding: const EdgeInsets.all(0),
           decoration: BoxDecoration(
             border: Border.all(color: color, width: 2),
             borderRadius: const BorderRadius.all(Radius.circular(200)),
@@ -300,7 +300,7 @@ class _HEditInformationState extends State<HEditInformation> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(title, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+          Text(title, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
           const SizedBox(height: 8),
           MultiSelectDialogField(
             items: dataSource.map((item) => MultiSelectItem(item['value'] ?? '', item['display'] ?? '')).toList(),

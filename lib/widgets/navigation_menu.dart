@@ -8,7 +8,7 @@ import 'package:projetpfe/features/screens/nearme/nearme.dart';
 import 'package:projetpfe/features/screens/profile/settings.dart';
 
 class NavigationMenu extends StatelessWidget {
-  const NavigationMenu({Key? key}) : super(key: key);
+  const NavigationMenu({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +54,7 @@ class NavigationController extends GetxController {
 
   final screens = [
     const HomePage(),
-    NewAnnonce(),
+    const NewAnnonce(),
     const MapScreen(),
     const SettingsScreen()
   ];

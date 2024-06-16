@@ -215,11 +215,7 @@ class _NewAnnonceState extends State<NewAnnonce> {
                     ),
                   ),
                 ),
-                Center(
-                  child: Text(
-                    'Latitude: ${_currentLocation?.latitude}, Longitude: ${_currentLocation?.longitude}',
-                  ),
-                ),
+
                 const SizedBox(height: HSize.spaceBtwInputFields),
                 TextFormField(
                   maxLines: 3,
