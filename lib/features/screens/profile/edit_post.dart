@@ -269,11 +269,6 @@ class _HEditPostState extends State<HEditPost> {
                     ),
                   ),
                 ),
-                Center(
-                  child: Text(
-                    'Latitude: ${_currentLocation?.latitude}, Longitude: ${_currentLocation?.longitude}',
-                  ),
-                ),
                 const SizedBox(height: HSize.spaceBtwInputFields),
                 TextFormField(
                   maxLines: 3,
