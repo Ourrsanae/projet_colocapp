@@ -25,5 +25,5 @@ Light and Dark Mode: Choose between light and dark themes to suit your visual pr
 ![WhatsApp Image 2024-06-16 à 17 07 14_3c0c66da](https://github.com/Ourrsanae/projet_colocapp/assets/143679582/6ded51e7-4863-4ed4-95b8-2eeb9deda2ac)
 ![WhatsApp Image 2024-06-16 à 17 07 15_c7c7dc80](https://github.com/Ourrsanae/projet_colocapp/assets/143679582/8fac1106-8925-4e6f-b01e-69658a951160)
 ![WhatsApp Image 2024-06-16 à 17 07 15_c0bcf0bd](https://github.com/Ourrsanae/projet_colocapp/assets/143679582/fc6f2637-eb5a-43e8-b5c3-70ae7780da0e)
-![WhatsApp Image 2024-06-16 à 18 16 04_1ff72c25](https://github.com/Ourrsanae/projet_colocapp/assets/143679582/6e478848-2a48-4b3f-8785-b2faa1fc33b6)
+![WhatsApp Image 2024-06-16 à 18 27 14_f383b784](https://github.com/Ourrsanae/projet_colocapp/assets/143679582/7c38ce7c-8d14-4c10-8333-ff18cb8427e3)
 ![WhatsApp Image 2024-06-16 à 17 11 49_b5a21b27](https://github.com/Ourrsanae/projet_colocapp/assets/143679582/70db0e1f-67aa-4537-8d3a-93e8b20217c9)
